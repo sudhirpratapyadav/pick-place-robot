@@ -214,7 +214,7 @@
     </collision>
   </link>
 
-<!--
+<!-- 
   <joint name='left_gripper_motor' type='prismatic'>
     <parent link="wrist_3_link"/>
     <child link="left_gripper"/>
@@ -242,11 +242,12 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0.042"/>
       <geometry>
-    <box size="0.02 0.02 0.15"/>
+        <box size="0.02 0.02 0.15"/>
       </geometry>
     </collision>
   </link>
-    <joint name='right_gripper_motor' type='prismatic'>
+
+  <joint name='right_gripper_motor' type='prismatic'>
     <parent link="wrist_3_link"/>
     <child link="right_gripper"/>
     <origin rpy="-1.57 0.0 0.0" xyz="0.06 0.1 -0.005"/>
@@ -273,10 +274,11 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0.042"/>
       <geometry>
-    <box size="0.02 0.02 0.15"/>
+        <box size="0.02 0.02 0.15"/>
       </geometry>
     </collision>
   </link>
+
   <joint name='back_gripper' type='prismatic'>
     <parent link="wrist_3_link"/>
     <child link="back_support_gripper"/>
@@ -304,18 +306,17 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0.042"/>
       <geometry>
-    <box size="0.02 0.02 0.15"/>
+        <box size="0.02 0.02 0.15"/>
       </geometry>
     </collision>
   </link>
-
--->
+ -->
 
   <!--################################################
   ########              gripper                  #####
   ####################################################-->
 
-<!--
+
   <link name="robotiq_85_adapter_link">
     <visual>
       <geometry>
@@ -523,7 +524,6 @@
       <origin rpy="-1.5707 -1.5707 0" xyz="0 -.090381 .051505"/>
     </collision>
   </link>
--->
 
   <!--################################################
   ########          connect model                #####

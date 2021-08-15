@@ -6,7 +6,10 @@ import pybullet_data
 
 #Getting Absolute Path from Relative Path of URDF file
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-robotUrdfPath = os.path.join(currentdir, "./urdf/ur5_gripper.urdf")
+# robotUrdfPath = os.path.join(currentdir, "./urdf/gripper.urdf")
+robotUrdfPath = os.path.join(currentdir, "./urdf/sisbot.urdf")
+# robotUrdfPath = os.path.join(currentdir, "./urdf/ur5_gripper.urdf")
+# robotUrdfPath = os.path.join(currentdir, "./urdf/ur5.urdf")
 
 # connect to engine servers
 physicsClient = p.connect(p.GUI) # GUI/DIRECT
