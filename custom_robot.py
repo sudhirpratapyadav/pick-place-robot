@@ -2,12 +2,15 @@ import os, inspect
 import pdb
 import pybullet as p
 import pybullet_data
+import time
 
 
 #Getting Absolute Path from Relative Path of URDF file
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+
 # robotUrdfPath = os.path.join(currentdir, "./urdf/gripper.urdf")
-robotUrdfPath = os.path.join(currentdir, "./urdf/sisbot.urdf")
+robotUrdfPath = os.path.join(currentdir, "./urdf/robotiq_2f_85_description.urdf")
+# robotUrdfPath = os.path.join(currentdir, "./urdf/sisbot.urdf")
 # robotUrdfPath = os.path.join(currentdir, "./urdf/ur5_gripper.urdf")
 # robotUrdfPath = os.path.join(currentdir, "./urdf/ur5.urdf")
 
@@ -61,6 +64,18 @@ try:
 
     prevLinkID = 0
     linkIDIn = p.addUserDebugParameter("linkID", 0, linkNum-1e-3-1, 0)
+
+    # for i in range(5):
+    #     print("-----------------iii-----------------")
+    #     print(i)
+    #     print("-----------------step----------------")
+
+    #     p.stepSimulation()
+    #     print("-----------------sleep------------------")
+    #     time.sleep(1)
+    #     print("------------------------------------")
+
+    # time.sleep(1)
 
     while(flag):
         p.stepSimulation()

@@ -1,0 +1,17 @@
+Base -> Outer Knuckle -> Outer Finger -> Inner Knuckle -> Inner Finger -> Inner Finger Padding
+
+	
+
+
+
+Base link
+	inner knuckle joint
+Inner Knuckle link
+
+Outer knuckle link
+	outer finger joint
+Outer Finger link
+	inner finger joint
+Inner Finger link
+	inner finger pad joint
+Inner Finger Pad link
