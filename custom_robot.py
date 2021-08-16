@@ -8,9 +8,7 @@ import time
 #Getting Absolute Path from Relative Path of URDF file
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 
-# robotUrdfPath = os.path.join(currentdir, "./urdf/gripper.urdf")
-robotUrdfPath = os.path.join(currentdir, "./urdf/robotiq_2f_85_description.urdf")
-# robotUrdfPath = os.path.join(currentdir, "./urdf/sisbot.urdf")
+robotUrdfPath = os.path.join(currentdir, "./urdf/robotiq_2f_85.urdf")
 # robotUrdfPath = os.path.join(currentdir, "./urdf/ur5_gripper.urdf")
 # robotUrdfPath = os.path.join(currentdir, "./urdf/ur5.urdf")
 
